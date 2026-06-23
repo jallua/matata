@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的小栈 | My Little Post</title>
+    <meta name="description" content="生活、技术、创意、随笔与项目分享">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span class="logo-icon">🏡</span>
+                <span class="logo-text" data-zh="我的小栈" data-en="My Little Post">我的小栈</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active" data-zh="首页" data-en="Home">首页</a></li>
+                <li><a href="src/pages/life.html" class="nav-link" data-zh="生活" data-en="Life">生活</a></li>
+                <li><a href="src/pages/tech.html" class="nav-link" data-zh="技术" data-en="Tech">技术</a></li>
+                <li><a href="src/pages/creative.html" class="nav-link" data-zh="创意" data-en="Creative">创意</a></li>
+                <li><a href="src/pages/essays.html" class="nav-link" data-zh="随笔" data-en="Essays">随笔</a></li>
+                <li><a href="src/pages/projects.html" class="nav-link" data-zh="项目" data-en="Projects">项目</a></li>
+                <li><a href="src/pages/about.html" class="nav-link" data-zh="关于" data-en="About">关于</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-zh="欢迎来到我的小栈" data-en="Welcome to My Little Post">欢迎来到我的小栈</h1>
+                <p class="hero-subtitle" data-zh="记录生活，分享技术，探索创意" data-en="Recording life, sharing tech, exploring creativity">记录生活，分享技术，探索创意</p>
+                <div class="hero-actions">
+                    <a href="#featured" class="btn btn-primary" data-zh="浏览文章" data-en="Browse Posts">浏览文章</a>
+                    <a href="src/pages/about.html" class="btn btn-secondary" data-zh="了解更多" data-en="Learn More">了解更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+    </header>
+
+    <!-- Featured Posts -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <h2 class="section-title" data-zh="精选内容" data-en="Featured">精选内容</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <div class="post-category" data-zh="技术" data-en="Tech">技术</div>
+                    <h3 class="post-title" data-zh="构建现代静态网站的最佳实践" data-en="Best Practices for Building Modern Static Sites">构建现代静态网站的最佳实践</h3>
+                    <p class="post-excerpt" data-zh="探索如何使用纯 HTML、CSS 和 JavaScript 构建高性能、易维护的网站..." data-en="Explore how to build high-performance, maintainable websites with pure HTML, CSS, and JavaScript...">探索如何使用纯 HTML、CSS 和 JavaScript 构建高性能、易维护的网站...</p>
+                    <div class="post-meta">
+                        <time datetime="2026-06-22">2026-06-22</time>
+                        <span class="read-time" data-zh="5 分钟阅读" data-en="5 min read">5 分钟阅读</span>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-category" data-zh="生活" data-en="Life">生活</div>
+                    <h3 class="post-title" data-zh="城市漫步：发现隐藏的美好" data-en="City Walk: Discovering Hidden Beauty">城市漫步：发现隐藏的美好</h3>
+                    <p class="post-excerpt" data-zh="在一个阳光明媚的周末，我踏上了城市漫步之旅，发现了许多平时忽略的美好..." data-en="On a sunny weekend, I embarked on a city walk and discovered beauty I had overlooked...">在一个阳光明媚的周末，我踏上了城市漫步之旅，发现了许多平时忽略的美好...</p>
+                    <div class="post-meta">
+                        <time datetime="2026-06-20">2026-06-20</time>
+                        <span class="read-time" data-zh="3 分钟阅读" data-en="3 min read">3 分钟阅读</span>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="post-category" data-zh="创意" data-en="Creative">创意</div>
+                    <h3 class="post-title" data-zh="设计思维在日常中的应用" data-en="Applying Design Thinking in Daily Life">设计思维在日常中的应用</h3>
+                    <p class="post-excerpt" data-zh="设计思维不仅仅是设计师的工具，它可以帮助我们解决生活中的各种问题..." data-en="Design thinking is not just a tool for designers; it can help us solve various problems in life...">设计思维不仅仅是设计师的工具，它可以帮助我们解决生活中的各种问题...</p>
+                    <div class="post-meta">
+                        <time datetime="2026-06-18">2026-06-18</time>
+                        <span class="read-time" data-zh="4 分钟阅读" data-en="4 min read">4 分钟阅读</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title" data-zh="探索主题" data-en="Explore Topics">探索主题</h2>
+            <div class="categories-grid">
+                <a href="src/pages/life.html" class="category-card">
+                    <span class="category-icon">🌱</span>
+                    <h3 class="category-name" data-zh="生活" data-en="Life">生活</h3>
+                    <p class="category-desc" data-zh="日常记录与生活感悟" data-en="Daily records and life reflections">日常记录与生活感悟</p>
+                </a>
+                <a href="src/pages/tech.html" class="category-card">
+                    <span class="category-icon">💻</span>
+                    <h3 class="category-name" data-zh="技术" data-en="Tech">技术</h3>
+                    <p class="category-desc" data-zh="技术分享与学习笔记" data-en="Tech sharing and learning notes">技术分享与学习笔记</p>
+                </a>
+                <a href="src/pages/creative.html" class="category-card">
+                    <span class="category-icon">🎨</span>
+                    <h3 class="category-name" data-zh="创意" data-en="Creative">创意</h3>
+                    <p class="category-desc" data-zh="灵感迸发与创意实践" data-en="Inspiration and creative practice">灵感迸发与创意实践</p>
+                </a>
+                <a href="src/pages/essays.html" class="category-card">
+                    <span class="category-icon">✍️</span>
+                    <h3 class="category-name" data-zh="随笔" data-en="Essays">随笔</h3>
+                    <p class="category-desc" data-zh="随想随写与思考记录" data-en="Random thoughts and reflections">随想随写与思考记录</p>
+                </a>
+                <a href="src/pages/projects.html" class="category-card">
+                    <span class="category-icon">🚀</span>
+                    <h3 class="category-name" data-zh="项目" data-en="Projects">项目</h3>
+                    <p class="category-desc" data-zh="项目展示与作品分享" data-en="Project showcase and portfolio">项目展示与作品分享</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🏡</span>
+                    <span class="logo-text" data-zh="我的小栈" data-en="My Little Post">我的小栈</span>
+                </div>
+                <p class="footer-text" data-zh="© 2026 我的小栈. 用心记录，用爱分享." data-en="© 2026 My Little Post. Record with heart, share with love.">© 2026 我的小栈. 用心记录，用爱分享.</p>
+                <div class="footer-links">
+                    <a href="src/pages/about.html" data-zh="关于" data-en="About">关于</a>
+                    <a href="#" data-zh="联系" data-en="Contact">联系</a>
+                    <a href="#" data-zh="RSS" data-en="RSS">RSS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/scripts/main.js"></script>
+</body>
+</html>
