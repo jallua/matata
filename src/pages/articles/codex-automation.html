@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 工具实战：用 Codex 自动化日常工作流 | 我的小栈</title>
+    <meta name="description" content="                <p>从代码审查到文档生成，AI 编程助手正在重塑开发者的工作方式。作为一个在企业环境中工作的开发者，我最近半年深度使用了 Codex（OpenAI 的 CLI 编码代">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../../../index.html" class="logo">
+                <span class="logo-icon">🏡</span>
+                <span class="logo-text" data-zh="我的小栈" data-en="My Little Post">我的小栈</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../../../index.html" class="nav-link" data-zh="首页" data-en="Home">首页</a></li>
+                <li><a href="../life.html" class="nav-link" data-zh="生活" data-en="Life">生活</a></li>
+                <li><a href="../tech.html" class="nav-link" data-zh="技术" data-en="Tech">技术</a></li>
+                <li><a href="../creative.html" class="nav-link" data-zh="创意" data-en="Creative">创意</a></li>
+                <li><a href="../essays.html" class="nav-link" data-zh="随笔" data-en="Essays">随笔</a></li>
+                <li><a href="../projects.html" class="nav-link" data-zh="项目" data-en="Projects">项目</a></li>
+                <li><a href="../about.html" class="nav-link" data-zh="关于" data-en="About">关于</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container">
+            <a href="../tech.html" class="article-back">← 返回技术</a>
+            <div class="article-category">💻 技术</div>
+            <h1 class="article-title">AI 工具实战：用 Codex 自动化日常工作流</h1>
+            <div class="article-meta">
+                <time datetime="2026-06-23">2026-06-23</time>
+                <span class="read-time">8 分钟阅读</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="article-content">
+                <p>从代码审查到文档生成，AI 编程助手正在重塑开发者的工作方式。作为一个在企业环境中工作的开发者，我最近半年深度使用了 Codex（OpenAI 的 CLI 编码代理）和 Claude，以下是我的真实经验和效率提升技巧。</p>
+
+                <h2>为什么选择 AI 编程助手？</h2>
+                <p>在日常开发中，我们花费大量时间在重复性任务上：写单元测试、生成文档、重构代码、排查 Bug。这些工作并非没有价值，但它们占据了本该用于创造性思考的时间。</p>
+                <p>AI 编程助手的价值不在于替代开发者，而在于处理那些"知道怎么做但不想再做一遍"的工作。就像计算器没有取代数学家，但让数学家能专注于更高层次的问题。</p>
+
+                <h2>实战场景一：代码审查</h2>
+                <p>这是我最常用的场景。把一段代码丢给 Codex，让它找出潜在问题：</p>
+                <blockquote>这段代码在处理空值时可能抛出 NullPointerException，建议在调用 getUser() 后添加 null 检查。</blockquote>
+                <p>它不仅能发现 bug，还能指出代码风格不一致、命名不规范等问题。对于团队代码审查来说，AI 可以作为第一道防线，让人类审查者专注于架构和设计层面的讨论。</p>
+
+                <h2>实战场景二：文档生成</h2>
+                <p>开发者最讨厌写文档，但没有文档的项目就像没有地图的城市。Codex 可以根据代码自动生成：</p>
+                <ul>
+                    <li>函数级别的 Javadoc / docstring</li>
+                    <li>API 接口文档</li>
+                    <li>README 中的使用说明</li>
+                    <li>变更日志（Changelog）</li>
+                </ul>
+                <p>关键是：生成的文档质量取决于你给它的上下文。提供清晰的代码注释和类型定义，AI 生成的文档会准确得多。</p>
+
+                <h2>实战场景三：自动化工作流</h2>
+                <p>这是效率提升最明显的场景。我让 Codex 帮我：</p>
+                <ul>
+                    <li>批量重命名变量（跨文件）</li>
+                    <li>将旧版 API 调用迁移到新版</li>
+                    <li>生成测试用例覆盖边界条件</li>
+                    <li>把 Python 脚本转写成 TypeScript</li>
+                </ul>
+                <p>以前需要半天的工作，现在 30 分钟就能完成。而且 AI 不会犯"复制粘贴忘记改变量名"这种低级错误。</p>
+
+                <h2>使用建议</h2>
+                <p>经过半年的实践，我总结了几个关键建议：</p>
+                <ol>
+                    <li><strong>明确指令</strong>：告诉 AI 你想要什么，而不是让它猜。"把这个函数改成异步的"比"优化这个函数"好得多。</li>
+                    <li><strong>分步进行</strong>：复杂任务拆成小步骤，每一步验证结果。</li>
+                    <li><strong>保持审查</strong>：AI 生成的代码一定要过一遍，特别是涉及业务逻辑的部分。</li>
+                    <li><strong>善用上下文</strong>：提供足够的背景信息，AI 的表现会大幅提升。</li>
+                </ol>
+
+                <h2>写在最后</h2>
+                <p>AI 编程助手不是银弹，但它确实改变了我的工作方式。我不再需要手动写那些"知道怎么写但写了很无聊"的代码，可以把更多精力放在架构设计和问题分析上。</p>
+                <p>如果你还没有尝试过，建议从一个小项目开始，慢慢找到适合自己的使用节奏。</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🏡</span>
+                    <span class="logo-text" data-zh="我的小栈" data-en="My Little Post">我的小栈</span>
+                </div>
+                <p class="footer-text" data-zh="© 2026 我的小栈. 用心记录，用爱分享." data-en="© 2026 My Little Post. Record with heart, share with love.">© 2026 我的小栈. 用心记录，用爱分享.</p>
+                <p class="footer-icp"><a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">沪ICP备19033520号-1</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+</body>
+</html>
